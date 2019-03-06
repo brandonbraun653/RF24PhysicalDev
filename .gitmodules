@@ -1,0 +1,6 @@
+[submodule "RF24Physical"]
+	path = RF24Physical
+	url = git@github.com:brandonbraun653/RF24Physical.git
+[submodule "lib/Chimera"]
+	path = lib/Chimera
+	url = git@github.com:brandonbraun653/Chimera.git
