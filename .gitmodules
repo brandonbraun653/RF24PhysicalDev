@@ -4,3 +4,6 @@
 [submodule "lib/Chimera"]
 	path = lib/Chimera
 	url = git@github.com:brandonbraun653/Chimera.git
+[submodule "lib/Kratos"]
+	path = lib/Kratos
+	url = git@github.com:brandonbraun653/Kratos.git

@@ -1,5 +1,5 @@
 #include <Chimera/chimera.hpp>
-#include <nrf24l01.hpp>
+#include <RF24Phy/RF24Phy.hpp>
 
 int main(void)
 {

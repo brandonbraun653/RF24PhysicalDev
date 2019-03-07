@@ -22,9 +22,6 @@
     <Filter Include="VisualGDB settings">
       <UniqueIdentifier>{f1faa1f2-ddc8-4c61-9db5-bf0a750f1f99}</UniqueIdentifier>
     </Filter>
-    <Filter Include="NRF24L01">
-      <UniqueIdentifier>{917622e8-31ef-49c4-ad71-b3599180331c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Thor">
       <UniqueIdentifier>{6a0ee19e-5980-4a40-9975-f8437146c18e}</UniqueIdentifier>
     </Filter>
@@ -33,9 +30,6 @@
     </Filter>
     <Filter Include="Thor\source">
       <UniqueIdentifier>{9280a185-4d77-4c08-9569-d1b8987892f3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Chimera">
-      <UniqueIdentifier>{4fe8d0cb-5f95-4f54-8078-b2cff6625c1d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Thor\stm32hal_f4">
       <UniqueIdentifier>{bd5757ea-a571-48fa-862c-9497a0079da9}</UniqueIdentifier>
@@ -67,6 +61,12 @@
     <Filter Include="Thor\stm32hal_f4\STM32F4xx_HAL_Driver\Src">
       <UniqueIdentifier>{415c06b4-481d-4c3e-af09-be9af1cefb97}</UniqueIdentifier>
     </Filter>
+    <Filter Include="RF24Phy">
+      <UniqueIdentifier>{7cf8d854-f025-4e92-8c5a-7c17617186e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chimera">
+      <UniqueIdentifier>{3422e780-5eb3-496c-b656-777a8548f1b2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="stm32.props">
@@ -75,19 +75,10 @@
     <None Include="stm32.xml">
       <Filter>VisualGDB settings</Filter>
     </None>
-    <ClCompile Include="..\..\..\..\nrf24l01.cpp">
-      <Filter>NRF24L01</Filter>
-    </ClCompile>
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\usart.cpp">
       <Filter>Thor\source</Filter>
     </ClCompile>
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\boostStub.cpp">
-      <Filter>Thor\source</Filter>
-    </ClCompile>
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\clock.cpp">
-      <Filter>Thor\source</Filter>
-    </ClCompile>
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\core.cpp">
       <Filter>Thor\source</Filter>
     </ClCompile>
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\defaults.cpp">
@@ -105,13 +96,7 @@
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\flags.cpp">
       <Filter>Thor\source</Filter>
     </ClCompile>
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\gdb.cpp">
-      <Filter>Thor\source</Filter>
-    </ClCompile>
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\gpio.cpp">
-      <Filter>Thor\source</Filter>
-    </ClCompile>
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\i2c.cpp">
       <Filter>Thor\source</Filter>
     </ClCompile>
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\interrupt.cpp">
@@ -135,14 +120,74 @@
     <None Include="C++Compilation-Release-C++17.vgdbsettings">
       <Filter>VisualGDB settings</Filter>
     </None>
+    <ClCompile Include="..\..\..\..\RF24Physical\RF24Phy\RF24Phy.cpp">
+      <Filter>RF24Phy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\RF24Physical\RF24Phy\RF24PhyDef.cpp">
+      <Filter>RF24Phy</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\RF24Physical\RF24Phy\RF24Phy.hpp">
+      <Filter>RF24Phy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\RF24Physical\RF24Phy\RF24PhyDef.hpp">
+      <Filter>RF24Phy</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera.cpp">
+      <Filter>Chimera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\logging.cpp">
+      <Filter>Chimera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\threading.cpp">
+      <Filter>Chimera</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\assertion.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\chimera.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\clock.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\config.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\gpio.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\interface.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\logging.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\preprocessor.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\serial.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\spi.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\system.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\threading.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\types.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\utilities.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\watchdog.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\nrf24l01.hpp">
-      <Filter>NRF24L01</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\nrf24l01_definitions.hpp">
-      <Filter>NRF24L01</Filter>
-    </ClInclude>
     <ClInclude Include="$(THOR_ROOT)\Thor\Thor\include\boostStub.hpp">
       <Filter>Thor\include</Filter>
     </ClInclude>
@@ -241,42 +286,6 @@
     </ClInclude>
     <ClInclude Include="$(THOR_ROOT)\Thor\Thor\include\utilities.hpp">
       <Filter>Thor\include</Filter>
-    </ClInclude>
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\assertion.hpp">
-      <Filter>Chimera</Filter>
-    </ClInclude>
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\chimera.hpp">
-      <Filter>Chimera</Filter>
-    </ClInclude>
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\config.hpp">
-      <Filter>Chimera</Filter>
-    </ClInclude>
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\gpio.hpp">
-      <Filter>Chimera</Filter>
-    </ClInclude>
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\interface.hpp">
-      <Filter>Chimera</Filter>
-    </ClInclude>
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\logging.hpp">
-      <Filter>Chimera</Filter>
-    </ClInclude>
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\preprocessor.hpp">
-      <Filter>Chimera</Filter>
-    </ClInclude>
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\serial.hpp">
-      <Filter>Chimera</Filter>
-    </ClInclude>
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\spi.hpp">
-      <Filter>Chimera</Filter>
-    </ClInclude>
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\threading.hpp">
-      <Filter>Chimera</Filter>
-    </ClInclude>
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\types.hpp">
-      <Filter>Chimera</Filter>
-    </ClInclude>
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\utilities.hpp">
-      <Filter>Chimera</Filter>
     </ClInclude>
     <ClInclude Include="$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h">
       <Filter>Thor\stm32hal_f4\STM32F4xx_HAL_Driver\Inc\Legacy</Filter>
@@ -577,19 +586,10 @@
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\mem.cpp">
       <Filter>Thor\source</Filter>
     </ClCompile>
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\nucleo.cpp">
-      <Filter>Thor\source</Filter>
-    </ClCompile>
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\print.cpp">
       <Filter>Thor\source</Filter>
     </ClCompile>
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\pwm.cpp">
-      <Filter>Thor\source</Filter>
-    </ClCompile>
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\ringbuffer.cpp">
-      <Filter>Thor\source</Filter>
-    </ClCompile>
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\rpc.cpp">
       <Filter>Thor\source</Filter>
     </ClCompile>
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\serial.cpp">
@@ -604,20 +604,8 @@
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\threads.cpp">
       <Filter>Thor\source</Filter>
     </ClCompile>
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\timer.cpp">
-      <Filter>Thor\source</Filter>
-    </ClCompile>
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\uart.cpp">
       <Filter>Thor\source</Filter>
-    </ClCompile>
-    <ClCompile Include="$(CHIMERA_ROOT)\Chimera\chimera.cpp">
-      <Filter>Chimera</Filter>
-    </ClCompile>
-    <ClCompile Include="$(CHIMERA_ROOT)\Chimera\logging.cpp">
-      <Filter>Chimera</Filter>
-    </ClCompile>
-    <ClCompile Include="$(CHIMERA_ROOT)\Chimera\threading.cpp">
-      <Filter>Chimera</Filter>
     </ClCompile>
     <ClCompile Include="$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c">
       <Filter>Thor\stm32hal_f4\STM32F4xx_HAL_Driver\Src</Filter>
@@ -882,6 +870,15 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Microcontrollers\Thor_STM32\Thor\Thor\source\thor_core.cpp">
+      <Filter>Thor\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Microcontrollers\Thor_STM32\Thor\Thor\source\thor_timer.cpp">
+      <Filter>Thor\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\Microcontrollers\Thor_STM32\Thor\Thor\source\thor_watchdog.cpp">
+      <Filter>Thor\source</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

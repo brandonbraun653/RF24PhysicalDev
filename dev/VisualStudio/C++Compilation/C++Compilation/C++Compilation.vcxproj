@@ -87,7 +87,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-C++17|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Inc;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\include;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\conf;$(THOR_ROOT)\Thor\lib\cmsis\CMSIS\Core\Include;$(THOR_ROOT)\Thor;$(ProjectDir)\..\..\..\..\;$(CHIMERA_ROOT);$(BOOST_ROOT)\boost_1_68_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Inc;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\include;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\conf;$(THOR_ROOT)\Thor\lib\cmsis\CMSIS\Core\Include;$(THOR_ROOT)\Thor\Thor\include;$(THOR_ROOT)\Thor;$(ProjectDir)../../../../RF24Physical;$(ProjectDir)../../../../lib/Chimera;$(BOOST_ROOT)\boost_1_68_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);DEBUG=1;STM32F446xx;USE_FULL_LL_DRIVER;BOOST_NO_EXCEPTIONS;</PreprocessorDefinitions>
       <CLanguageStandard>C99</CLanguageStandard>
       <CPPLanguageStandard>CPP1Z</CPPLanguageStandard>
@@ -97,7 +97,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-C++14|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Inc;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\include;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\conf;$(THOR_ROOT)\Thor\lib\cmsis\CMSIS\Core\Include;$(THOR_ROOT)\Thor;$(ProjectDir)\..\..\..\..\;$(CHIMERA_ROOT);$(BOOST_ROOT)\boost_1_68_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Inc;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\include;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\conf;$(THOR_ROOT)\Thor\lib\cmsis\CMSIS\Core\Include;$(THOR_ROOT)\Thor\Thor\include;$(THOR_ROOT)\Thor;$(ProjectDir)../../../../RF24Physical;$(ProjectDir)../../../../lib/Chimera;$(BOOST_ROOT)\boost_1_68_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);DEBUG=1;STM32F446xx;USE_FULL_LL_DRIVER;BOOST_NO_EXCEPTIONS;</PreprocessorDefinitions>
       <CLanguageStandard>C99</CLanguageStandard>
       <CPPLanguageStandard>CPP14</CPPLanguageStandard>
@@ -107,7 +107,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug-C++11|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Inc;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\include;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\conf;$(THOR_ROOT)\Thor\lib\cmsis\CMSIS\Core\Include;$(THOR_ROOT)\Thor;$(ProjectDir)\..\..\..\..\;$(CHIMERA_ROOT);$(BOOST_ROOT)\boost_1_68_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Inc;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\include;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\conf;$(THOR_ROOT)\Thor\lib\cmsis\CMSIS\Core\Include;$(THOR_ROOT)\Thor\Thor\include;$(THOR_ROOT)\Thor;$(ProjectDir)../../../../RF24Physical;$(ProjectDir)../../../../lib/Chimera;$(BOOST_ROOT)\boost_1_68_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);DEBUG=1;STM32F446xx;USE_FULL_LL_DRIVER;BOOST_NO_EXCEPTIONS;</PreprocessorDefinitions>
       <CLanguageStandard>C99</CLanguageStandard>
       <CPPLanguageStandard>CPP11</CPPLanguageStandard>
@@ -117,7 +117,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-C++17|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Inc;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\include;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\conf;$(THOR_ROOT)\Thor\lib\cmsis\CMSIS\Core\Include;$(THOR_ROOT)\Thor;$(ProjectDir)\..\..\..\..\;$(CHIMERA_ROOT);$(BOOST_ROOT)\boost_1_68_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Inc;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\include;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\conf;$(THOR_ROOT)\Thor\lib\cmsis\CMSIS\Core\Include;$(THOR_ROOT)\Thor\Thor\include;$(THOR_ROOT)\Thor;$(ProjectDir)../../../../RF24Physical;$(ProjectDir)../../../../lib/Chimera;$(BOOST_ROOT)\boost_1_68_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;STM32F446xx;USE_FULL_LL_DRIVER;BOOST_NO_EXCEPTIONS;</PreprocessorDefinitions>
       <CLanguageStandard>C99</CLanguageStandard>
       <CPPLanguageStandard>CPP1Z</CPPLanguageStandard>
@@ -126,7 +126,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-C++14|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Inc;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\include;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\conf;$(THOR_ROOT)\Thor\lib\cmsis\CMSIS\Core\Include;$(THOR_ROOT)\Thor;$(ProjectDir)\..\..\..\..\;$(CHIMERA_ROOT);$(BOOST_ROOT)\boost_1_68_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Inc;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\include;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\conf;$(THOR_ROOT)\Thor\lib\cmsis\CMSIS\Core\Include;$(THOR_ROOT)\Thor\Thor\include;$(THOR_ROOT)\Thor;$(ProjectDir)../../../../RF24Physical;$(ProjectDir)../../../../lib/Chimera;$(BOOST_ROOT)\boost_1_68_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;STM32F446xx;USE_FULL_LL_DRIVER;BOOST_NO_EXCEPTIONS;</PreprocessorDefinitions>
       <CLanguageStandard>C99</CLanguageStandard>
       <CPPLanguageStandard>CPP14</CPPLanguageStandard>
@@ -135,7 +135,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-C++11|VisualGDB'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Inc;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\include;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\conf;$(THOR_ROOT)\Thor\lib\cmsis\CMSIS\Core\Include;$(THOR_ROOT)\Thor;$(ProjectDir)\..\..\..\..\;$(CHIMERA_ROOT);$(BOOST_ROOT)\boost_1_68_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Inc;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\include;$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\conf;$(THOR_ROOT)\Thor\lib\cmsis\CMSIS\Core\Include;$(THOR_ROOT)\Thor\Thor\include;$(THOR_ROOT)\Thor;$(ProjectDir)../../../../RF24Physical;$(ProjectDir)../../../../lib/Chimera;$(BOOST_ROOT)\boost_1_68_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;STM32F446xx;USE_FULL_LL_DRIVER;BOOST_NO_EXCEPTIONS;</PreprocessorDefinitions>
       <CLanguageStandard>C99</CLanguageStandard>
       <CPPLanguageStandard>CPP11</CPPLanguageStandard>
@@ -148,7 +148,9 @@
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\nrf24l01.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Microcontrollers\Thor_STM32\Thor\Thor\source\thor_core.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Microcontrollers\Thor_STM32\Thor\Thor\source\thor_timer.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Microcontrollers\Thor_STM32\Thor\Thor\source\thor_watchdog.cpp" />
     <ClCompile Include="main.cpp" />
     <None Include="C++Compilation-Debug-C++11.vgdbsettings" />
     <None Include="C++Compilation-Debug-C++14.vgdbsettings" />
@@ -157,8 +159,6 @@
     <None Include="C++Compilation-Release-C++14.vgdbsettings" />
     <None Include="C++Compilation-Release-C++17.vgdbsettings" />
     <None Include="stm32.props" />
-    <ClInclude Include="..\..\..\..\nrf24l01.hpp" />
-    <ClInclude Include="..\..\..\..\nrf24l01_definitions.hpp" />
     <None Include="stm32.xml" />
     <ClInclude Include="$(THOR_ROOT)\Thor\Thor\include\boostStub.hpp" />
     <ClInclude Include="$(THOR_ROOT)\Thor\Thor\include\clock.hpp" />
@@ -194,45 +194,22 @@
     <ClInclude Include="$(THOR_ROOT)\Thor\Thor\include\usart.hpp" />
     <ClInclude Include="$(THOR_ROOT)\Thor\Thor\include\utilities.hpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\boostStub.cpp" />
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\clock.cpp" />
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\core.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\defaults.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\definitions.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\exceptions.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\exti.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\flags.cpp" />
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\gdb.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\gpio.cpp" />
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\i2c.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\interrupt.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\mem.cpp" />
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\nucleo.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\print.cpp" />
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\pwm.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\ringbuffer.cpp" />
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\rpc.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\serial.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\spi.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\thor.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\threads.cpp" />
-    <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\timer.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\uart.cpp" />
     <ClCompile Include="$(THOR_ROOT)\Thor\Thor\source\usart.cpp" />
-    <ClCompile Include="$(CHIMERA_ROOT)\Chimera\chimera.cpp" />
-    <ClCompile Include="$(CHIMERA_ROOT)\Chimera\logging.cpp" />
-    <ClCompile Include="$(CHIMERA_ROOT)\Chimera\threading.cpp" />
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\assertion.hpp" />
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\chimera.hpp" />
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\config.hpp" />
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\gpio.hpp" />
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\interface.hpp" />
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\logging.hpp" />
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\preprocessor.hpp" />
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\serial.hpp" />
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\spi.hpp" />
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\threading.hpp" />
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\types.hpp" />
-    <ClInclude Include="$(CHIMERA_ROOT)\Chimera\utilities.hpp" />
     <ClInclude Include="$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\conf\stm32f4xx_hal_conf.h" />
     <ClInclude Include="$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\include\stm32f446xx.h" />
     <ClInclude Include="$(THOR_ROOT)\Thor\lib\stm32hal_f4\Device\include\stm32f4xx.h" />
@@ -418,5 +395,27 @@
     <ClCompile Include="$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usart.c" />
     <ClCompile Include="$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_usb.c" />
     <ClCompile Include="$(THOR_ROOT)\Thor\lib\stm32hal_f4\STM32F4xx_HAL_Driver\Src\stm32f4xx_ll_utils.c" />
+    <ClCompile Include="..\..\..\..\RF24Physical\RF24Phy\RF24Phy.cpp" />
+    <ClCompile Include="..\..\..\..\RF24Physical\RF24Phy\RF24PhyDef.cpp" />
+    <ClInclude Include="..\..\..\..\RF24Physical\RF24Phy\RF24Phy.hpp" />
+    <ClInclude Include="..\..\..\..\RF24Physical\RF24Phy\RF24PhyDef.hpp" />
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\logging.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\threading.cpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\assertion.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\chimera.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\clock.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\config.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\gpio.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\interface.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\logging.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\preprocessor.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\serial.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\spi.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\system.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\threading.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\types.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\utilities.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\watchdog.hpp" />
   </ItemGroup>
 </Project>
