@@ -62,9 +62,6 @@
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\mock\chimera_mock_delay.cpp">
       <Filter>Chimera\mock</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\mock\chimera_mock_spi.cpp">
-      <Filter>Chimera\mock</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\mock\chimera_mock_watchdog.cpp">
       <Filter>Chimera\mock</Filter>
     </ClCompile>
@@ -80,8 +77,6 @@
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\mock\watchdog.hpp">
       <Filter>Chimera\mock</Filter>
     </ClInclude>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gtest-all.cc" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gmock-all.cc" />
     <ClCompile Include="..\..\..\..\RF24Physical\RF24Phy\RF24Phy.cpp">
       <Filter>RF24Physical</Filter>
     </ClCompile>
@@ -112,6 +107,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\RF24Physical\RF24Phy\RF24PhyDef.hpp">
       <Filter>RF24Physical</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\mock\gpio.hpp">
+      <Filter>Chimera\mock</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

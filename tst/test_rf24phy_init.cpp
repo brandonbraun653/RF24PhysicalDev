@@ -1,11 +1,11 @@
 /********************************************************************************
-*   File Name:
-*   
+* File Name:
+*   test_rf24phy_init.cpp
 *
-*   Description:
+* Description:
+*   Tests the initialization function of a RF24Phy::Phy object.
 *
-*
-*   2019 | Brandon Braun | brandonbraun653@gmail.com
+* 2019 | Brandon Braun | brandonbraun653@gmail.com
 ********************************************************************************/
 
 /* Interface Under Test Includes */
@@ -14,27 +14,47 @@
 /* Test Driver Includes */
 #include <gtest/gtest.h>
 #include <gmock/gmock.h>
+//#include <Chimera/mock/spi.hpp>
 
-#include <Chimera/mock/spi.hpp>
+#include <Chimera/spi.hpp>
+#include <Chimera/gpio.hpp>
 
 
 using ::testing::AtLeast;
+using ::testing::Exactly;
 using ::testing::_;
+using ::testing::Mock;
 
-TEST(try1, test1)
+TEST(RF24PhyTest_begin, normalOperation)
 {
-  SPIMock spi;
+  /*------------------------------------------------
+  Initialize test objects
+  ------------------------------------------------*/
+  Chimera::Mock::SPIMock spi;
+  Chimera::Mock::GPIOMock gpio;
 
-  Chimera::SPI::Setup setup;
+  RF24Phy::Phy radio(&spi, &gpio);
 
-  EXPECT_CALL( spi, testfunc())
+  /*------------------------------------------------
+  Set up expectations
+  ------------------------------------------------*/
+  EXPECT_CALL(spi, setChipSelectControlMode(_))
     .Times(AtLeast(1));
 
-  EXPECT_CALL( spi, deInit())
+  EXPECT_CALL(spi, setChipSelect(_))
+    .Times(Exactly(2));
+
+  EXPECT_CALL(gpio, setMode(_, _))
+    .Times(Exactly(1));
+
+  EXPECT_CALL(gpio, setState(_))
     .Times(AtLeast(1));
 
-  EXPECT_CALL( spi, init(_))
-    .Times(AtLeast(1));
+  /*------------------------------------------------
+  Call FUT
+  ------------------------------------------------*/
+  bool result = radio.begin();
 
-  ASSERT_EQ(1, 1);
+  EXPECT_EQ( result, true );
+  EXPECT_EQ( result, radio.isInitialized() );
 }
