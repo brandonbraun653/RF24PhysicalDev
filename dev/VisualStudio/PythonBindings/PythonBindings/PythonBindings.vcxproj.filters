@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="RF24Physical">
+      <UniqueIdentifier>{af50ae13-0bfd-4ebb-bf41-e141504177c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RF24Physical\RF24Phy">
+      <UniqueIdentifier>{21c8eefe-6981-43ec-894e-915932d3334e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RF24Physical\RF24Phy\python">
+      <UniqueIdentifier>{2fffccbc-e1da-4eb4-8972-0f50beadeaa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chimera">
+      <UniqueIdentifier>{0710dcf2-68ee-4ca4-8ccd-dd19a9e54164}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\RF24Physical\RF24Phy\RF24Phy.cpp">
+      <Filter>RF24Physical\RF24Phy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\RF24Physical\RF24Phy\RF24PhyDef.cpp">
+      <Filter>RF24Physical\RF24Phy</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\RF24Physical\RF24Phy\RF24Phy.hpp">
+      <Filter>RF24Physical\RF24Phy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\RF24Physical\RF24Phy\RF24PhyDef.hpp">
+      <Filter>RF24Physical\RF24Phy</Filter>
+    </ClInclude>
+    <ClInclude Include="chimeraPort.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera.cpp">
+      <Filter>Chimera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\logging.cpp">
+      <Filter>Chimera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\threading.cpp">
+      <Filter>Chimera</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\assertion.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\chimera.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\clock.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\config.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\gpio.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\interface.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\logging.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\preprocessor.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\serial.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\spi.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\system.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\threading.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\types.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\utilities.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\watchdog.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\RF24Physical\RF24Phy\python\rf24phy_python.cpp">
+      <Filter>RF24Physical\RF24Phy\python</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
